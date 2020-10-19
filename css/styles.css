@@ -25,6 +25,7 @@
     background-color: #7477bf;
     padding: 5px 13px;
     justify-content: space-between;
+    grid-area: header;
 }
 
 .user {
@@ -87,6 +88,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    grid-area: nav;
 }
 
 .icons-nav {
@@ -102,6 +104,10 @@ h3 {
 
 .nav a {
     margin: 0 16px;
+}
+
+.main {
+  grid-area: main;
 }
 
 .dash-header {
@@ -143,5 +149,15 @@ input {
 }
 
 @media (min-width: 1024px) {
-  
+  .grid-container {
+        grid-template-columns: 60px 1fr;
+        grid-template-areas:
+        "header header"
+        "nav main";
+    }
+    .nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+    }
 }
