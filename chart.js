@@ -1,10 +1,10 @@
 const traffic = document.getElementById('traffic-chart').getContext('2d');
 
 var chart1 = new Chart(traffic, {
-    // The type of chart we want to create
+    // chart type
     type: 'line',
 
-    // The data for our dataset
+    // data set
     data: {
         labels: ['16-22', '23-29','30-5','6-12','13-19',
         '20-26', '27-3', '4-10','11-17', '18-24','25-31'],
