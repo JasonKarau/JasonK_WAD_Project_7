@@ -21,7 +21,7 @@ var chart1 = new Chart(traffic, {
         }]
     },
 
-    // Configuration options go here
+    // Config
     options: {
         scales: {
             yAxes: [{
