@@ -67,7 +67,26 @@
             <b>ALERT!</b> New stats have just been received from HR. Click to view report.<span class="close" id="closeAlert">&times;</span>
         </p>
     </div>
+
+    <section class= "traffic">
+      <div class= "traffic-header">
+        <h3> TRAFFIC </h3>
+          <ul class= "traffic-nav">
+            <li class= "traffic-nav-link"> Hourly </li>
+            <li class= "traffic-nav-link"> Daily </li>
+            <li class= "traffic-nav-link active"> Weekly </li>
+            <li class= "traffic-nav-link"> Monthly </li>
+          </ul>
+        </div>
+        <div class= "widget-container-full">
+      <!-- element line graph will attach to -->
+      <canvas id="traffic-chart"></canvas>
+      </div>
+    </section>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="chart.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
