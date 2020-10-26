@@ -204,7 +204,10 @@ input {
     padding: 15px 0px 0px 0px;
 }
 
-.traffic-header h3 {
+.traffic-header h3,
+.daily h3,
+.mobile h3,
+.social-container h3 {
     margin: auto 0;
     color: #8f8f8f;
     font-weight: 700;
@@ -234,6 +237,27 @@ input {
     background-color: #81c98f;
 }
 
+canvas {
+    max-width: 100%;
+}
+
+.widget-container-half {
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightslategray;
+    margin: 0;
+}
+
+.second-chart,
+.third-chart {
+    padding: 15px;
+}
+
+.social-image {
+  width: 40px;
+  height: 40px;
+}
+
 @media (min-width: 768px) {
 
 }
@@ -241,6 +265,7 @@ input {
 @media (min-width: 1024px) {
   .grid-container {
         grid-template-columns: 80px 1fr;
+        grid-template-rows: 60px 1fr;
         grid-template-areas:
         "header header"
         "nav main";
@@ -319,6 +344,30 @@ input {
         margin-right: 25px;
         margin-top: 25px;
         margin-left: 25px;
+    }
+
+    .widget-container-full {
+      width: 90vw;
+      margin: 0 auto;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+        display: inline-block;
+        border-right: 1px solid lightslategray;
+        margin: 0;
+    }
+
+    .no-border {
+      border-right: none;
+    }
+
+    .daily h3,
+    .mobile h3,
+    .social-container h3 {
+        margin: 15px;
+        color: #8f8f8f;
+        font-weight: 700;
     }
 
 
