@@ -253,13 +253,57 @@ canvas {
     padding: 15px;
 }
 
+.social-container {
+   display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-bottom: 1.5em;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+}
+
 .social-image {
+  display: flex;
+  background-color: #7477bf;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.social-image svg {
   width: 40px;
   height: 40px;
+  margin: auto;
+}
+
+.social-text p {
+    margin: 0 30px;
+}
+
+.social-name {
+    font-size: 20px;
+    font-weight: bold;
+    color:#7477bf;
+}
+
+.social-number {
+    line-height: 50px;
+    font-weight: 100;
+    font-size: 40px;
+    color: #666;
 }
 
 @media (min-width: 768px) {
+      .social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
 
+      .social div {
+        margin-left: 15px;
+      }
 }
 
 @media (min-width: 1024px) {
@@ -274,7 +318,7 @@ canvas {
     .nav {
         flex-direction: column;
         justify-content: flex-start;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .icons-nav {
@@ -315,20 +359,6 @@ canvas {
         text-align: justify;
     }
 
-    #closeAlert {
-        float: right;
-        margin-top: -8px;
-        padding: 0;
-        font-size: 32px;
-    }
-
-    .close {
-        cursor: pointer;
-    }
-
-    .close:hover {
-        opacity: 0.5;
-    }
 
     .alert span {
         font-weight: 700;
@@ -364,10 +394,28 @@ canvas {
 
     .daily h3,
     .mobile h3,
-    .social-container h3 {
+    .social-container-text {
         margin: 15px;
         color: #8f8f8f;
         font-weight: 700;
+    }
+
+    .social-container {
+        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    .social-name,
+    .social-number {
+        text-align: left;
+        padding-left: 0px;
+        margin-right: 10px;
+    }
+
+    .social {
+      /* make grid here? in initial container? */
     }
 
 

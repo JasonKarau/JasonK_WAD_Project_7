@@ -45,12 +45,12 @@ var chart1 = new Chart(traffic, {
     }
 });
 
-//Bar chart
+// Bar chart
 var chart2 = new Chart(daily, {
-    // The type of chart we want to create
+    // chart type
     type: 'bar',
 
-    // The data for our dataset
+    // data set
     data: {
         labels: ['S', 'M', 'T', 'W', 'T', 'F','S'],
         datasets: [{
@@ -64,7 +64,7 @@ var chart2 = new Chart(daily, {
         }]
     },
 
-    // Configuration options go here
+    // Config
     options: {
         scales: {
             yAxes: [{
@@ -88,10 +88,10 @@ var chart2 = new Chart(daily, {
 
 //mobile users
 var chart3 = new Chart(mobile, {
-    // The type of chart we want to create
+    // chart type
     type: 'doughnut',
 
-    // The data for our dataset
+    // data set
     data: {
         labels: ["Phones", "Tablets", "Desktop"],
         datasets: [{
@@ -102,7 +102,7 @@ var chart3 = new Chart(mobile, {
         }]
     },
 
-    // Configuration options go here
+    // Config
     options: {
         legend: {
             position: "right",
