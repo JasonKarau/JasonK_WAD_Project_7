@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/toggle-switch.css">
   <title>Web App Dashboard</title>
 </head>
 <body class="grid-container">
@@ -163,6 +164,142 @@
             </div>
         </div>
       </div>
+
+      <div class="bottom-section">
+        <section class="members">
+          <h3 class="new-members"> NEW MEMBERS </h3>
+
+          <div class="members-container">
+            <img src= "images/member-1.jpg" class= "profile-image">
+            <div class= "members-text">
+              <p> Victoria Chambers </p>
+              <a href= "#"> victoria.chambers80@example.com </a>
+            </div>
+            <p class="date"> 10/15/15 </p>
+          </div>
+
+          <div class="members-container">
+              <img src="images/member-2.jpg" alt="Dale Byrd" class="profile-image">
+              <div class="members-text">
+                  <p class="members-name">Dale Byrd</p>
+                  <a href='#'>dale.byrd52@example.com</a>
+                  </div>
+                  <p class="date">8/1/20</p>
+              </div>
+
+          <div class="members-container">
+              <img src="images/member-3.jpg" alt="Dawn Wood" class="profile-image">
+              <div class="members-text">
+                  <p class="members-name">Dawn Wood</p>
+                  <a href='#'>dawn.wood16@example.com</a>
+              </div>
+              <p class="date">8/1/20</p>
+          </div>
+
+          <div class="members-container">
+              <img src="images/member-4.jpg" alt="Dan Oliver">
+              <div class="members-text">
+                  <p class="members-name">Dan Oliver</p>
+                  <a href='#'>dan.oliver82@example.com</a>
+                 </div>
+                 <p class="date">8/1/20</p>
+          </div>
+        </section>
+
+        <section class="activity">
+          <h3 class="recent-activity">RECENT ACTIVITY</h3>
+          <div class="activity-container">
+                  <img src="images/member-1.jpg" alt="Victoria Chambers">
+                  <div class="activity-text">
+                      <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+                      <p class="activity-time">4 hours ago</p>
+              </div>
+              <span>&gt;</span>
+          </div>
+
+              <div class="activity-container">
+                  <img src="images/member-2.jpg" alt="Dale Byrd">
+                  <div class="activity-text">
+                      <p>Dale Byrd like the post Facebook changes for 2020</p>
+                      <p class="activity-time">5 hours ago</p>
+                  </div>
+               <span>&gt;</span>
+              </div>
+
+              <div class="activity-container">
+                  <img src="images/member-3.jpg" alt="Dawn Wood">
+                  <div class="activity-text">
+                      <p>Dawn Wood commented on Facebook changes for 2020</p>
+                      <p class="activity-time">5 hours ago</p>
+              </div>
+              <span>&gt;</span>
+              </div>
+
+              <div class="activity-container">
+                  <img src="images/member-4.jpg" alt="Dan Oliver">
+                  <div class="activity-text">
+                      <p>Dan Oliver posted YourApp's SEO Tips</p>
+                      <p class="activity-time">1 day ago</p>
+              </div>
+              <span>&gt;</span>
+          </div>
+
+      </section>
+
+      <section class="message">
+                <h3>MESSAGE USER</h3>
+                <form class="widget-container">
+                    <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                    <textarea placeholder="Message for user" class="form-area" id="messageField" rows="5"></textarea>
+                    <button class="button-primary-send" id="send">SEND</button>
+                </form>
+            </section>
+
+            <section class="settings">
+                <h3>SETTINGS</h3>
+
+                <label class="switch-light switch-ios" style="width: 100px" onclick="">
+                  <input type="checkbox">
+                    <strong>
+                      Send Email Notifications
+                    </strong>
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                </label>
+
+                <label class="switch-light switch-ios" style="width: 100px" onclick="">
+                  <input type="checkbox">
+                    <strong>
+                      Set Profile to Public
+                    </strong>
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                </label>
+
+                <select class="form-field" id="timezone">
+                    <option selected>Select A Timezone</option>
+                    <option>EDT: Eastern Standard Time</option>
+                    <option>CDT: Central Daylight Time</option>
+                    <option>MDT: Mountain Daylight Time</option>
+                    <option>PDT: Pacific Daylight Time</option>
+                    <option>AKDT: Alaska Daylight Time</option>
+                    <option>HST: Hawaii-Aleutian Daylight Time</option>
+                </select>
+
+                <div class="settings-button">
+                    <button class="button-primary-save" id="save">SAVE</button>
+                    <button class="button-disabled" id="cancel">CANCEL</button>
+                </div>
+
+              </section>
+    </div>
+
 
   </main>
 
