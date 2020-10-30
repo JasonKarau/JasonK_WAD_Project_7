@@ -420,6 +420,12 @@ canvas {
     margin-left: 0;
 }
 
+.switch-container label {
+  display: flex;
+}
+
+
+
 @media (min-width: 768px) {
       .social {
         display: flex;
