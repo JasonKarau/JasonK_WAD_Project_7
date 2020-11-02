@@ -210,9 +210,7 @@ input {
   font-weight: 700;
 }
 
-.daily h3,
-.mobile h3,
-.social-container-text, {
+.social-container-text {
   margin: 15px 0px 15px 15px;
   color: #8f8f8f;
   font-weight: 700;
@@ -272,6 +270,8 @@ canvas {
     justify-content: space-between;
     padding: 15px;
     margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     border: 1px solid #d8d8d8;
     border-radius: 10px;
     background-color: #fbfbfb;
@@ -365,21 +365,36 @@ canvas {
 }
 
 .activity-container span {
-    font-weight: 600;
+    font-weight: 700;
     text-align: right;
     flex-grow: 1;
+    content: '>';
+    color: lightgrey;
+    font-size: 25px;
+    margin-left: 30px;
 }
 
 .form-area,
 .form-field {
     padding: 20px;
-    margin: 15px 15px 15px 15px;
+    margin: 15px 0px 15px 0px;
     border-radius: 6px;
     border-style: none;
     font-weight: bold;
     color: black;
     background: #fbfbfb;
-    width: auto;
+    width: 100%;
+}
+
+.form-timezone {
+    padding: 20px;
+    margin: 30px 0px 15px 0px;
+    border-radius: 6px;
+    border-style: none;
+    font-weight: bold;
+    color: black;
+    background: #fbfbfb;
+    width: 100%;
 }
 
 .widget-container {
@@ -390,11 +405,12 @@ canvas {
 .settings-button {
     display: flex;
     justify-content: space-between;
+    margin-top: 41px;
 }
 
 #send {
-    margin-left: 15px;
-    width: 95%;
+    margin-left: 15px 0px 15px 0px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -411,7 +427,7 @@ canvas {
 
 #save,
 #cancel {
-    margin: 10px 15px 12px 15px;
+    margin: 10px 0px 12px 0px;
     width: 42%;
 }
 
@@ -422,10 +438,32 @@ canvas {
 
 .switch-container label {
   display: flex;
+  width: 350px;
+  margin-bottom: 15px;
 }
 
+.switch-container strong {
+  min-width: 250px;
+  color: #666;
+  font-weight: 700;
+  margin-top: 6px;
+  font-size: 14px;
+}
 
+.daily h3,
+.mobile h3,
+.social-container-text {
+    margin: 15px;
+    color: #8f8f8f;
+    font-weight: 700;
+}
 
+.settings,
+.message,
+.members,
+.activity {
+  border-top: 1px solid lightslategray;
+}
 @media (min-width: 768px) {
       .social {
         display: flex;
@@ -525,14 +563,6 @@ canvas {
       border-right: none;
     }
 
-    .daily h3,
-    .mobile h3,
-    .social-container-text {
-        margin: 15px;
-        color: #8f8f8f;
-        font-weight: 700;
-    }
-
     .social-container {
         grid-template-columns: repeat(3, 1fr);
         display: flex;
@@ -572,6 +602,7 @@ canvas {
     .message {
       width: 50%;
       border-right: 1px solid lightslategray;
+      border-top: none;
     }
 
     .bottom-section {
