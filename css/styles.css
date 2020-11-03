@@ -102,8 +102,13 @@ h3 {
 }
 
 .nav a {
-    margin: 0px 16px;
+    padding: 0px 16px;
     display: block;
+}
+
+.active-item {
+    border-right: 0px solid #81c98f;
+    border-top: 2px solid #81c98f;
 }
 
 .main {
@@ -490,6 +495,16 @@ canvas {
         flex-direction: column;
         justify-content: flex-start;
         min-height: 100vh;
+    }
+
+    .nav a {
+        padding: 0px 16px;
+        display: block;
+    }
+
+    .active-item {
+        border-top: 0px solid #81c98f;
+        border-left: 3px solid #81c98f;
     }
 
     .icons-nav {
