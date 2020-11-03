@@ -206,7 +206,7 @@ input {
 .traffic-header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0px 15px 0px;
 }
 
 .traffic-header h3 {

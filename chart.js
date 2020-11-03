@@ -25,6 +25,9 @@ var chart1 = new Chart(traffic, {
 
     // Config
     options: {
+      legend: {
+       display: false
+     },
         scales: {
             yAxes: [{
                 ticks: {
@@ -66,6 +69,9 @@ var chart2 = new Chart(daily, {
 
     // Config
     options: {
+      legend: {
+       display: false
+     },
         scales: {
             yAxes: [{
                 ticks: {
